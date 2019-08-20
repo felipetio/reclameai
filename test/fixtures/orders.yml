@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  total: 9.99
+  cep: 04060003
+  address: Avenida Piassanguaba
+  number: 2222
+  city: São Paulo
+  state: SP
+  lat:
+  lng:
+
+two:
+  user: two
+  total: 100.00
+  cep: 70832525
+  address: CLN 202 Bloco B
+  number: 25
+  city: Brasília
+  state: DF
+  lat:
+  long:

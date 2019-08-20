@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Fulano de Tal
+  email: fulanodetal@test.com
+  phone: 1192345678
+
+two:
+  name: Cicrana de Jesus
+  email: cicranadejesus@test.com
+  phone: 19999999999

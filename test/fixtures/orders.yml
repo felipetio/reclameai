@@ -1,6 +1,6 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+sp:
   user: one
   total: 9.99
   cep: 04060003
@@ -11,7 +11,7 @@ one:
   lat: -23.619129
   lng: -46.645659
 
-two:
+bsb:
   user: two
   total: 100.00
   cep: 70832525

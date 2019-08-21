@@ -3,6 +3,8 @@ class Ticket < ApplicationRecord
 
   belongs_to :order
 
+  scope :safe, -> { where(suspicious: false) }
+
   geocoded_by :ip_address, latitude: :lat, longitude: :lng
 
   after_validation :geocode, if: ->(o){ o.ip_address.present? }

@@ -1,0 +1,9 @@
+<h1>Ticket#show</h1>
+<p>Find me in app/views/ticket/show.html.erb</p>
+
+<p>#<%= @ticket.id %></p>
+<p>Created at: <%= @ticket.created_at.to_formatted_s(:short) %></p>
+<p>Description: <%= @ticket.description %></p>
+
+<%= link_to "Back", tickets_path %>
+

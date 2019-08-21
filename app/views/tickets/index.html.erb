@@ -1,0 +1,24 @@
+<h1>Ticket#index</h1>
+<p>Find me in app/views/ticket/index.html.erb</p>
+
+<%= link_to "New", new_ticket_path %>
+
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Created at</th>
+        <th>Description</th>
+        <th>Suspicious</th>
+    </thead>
+    <tbody>
+    <% @tickets.each do |t| %>
+        <tr>
+            <td><%= t.id %></td>
+            <td><%= t.created_at.to_formatted_s(:short) %></td>
+            <td><%= t.description %></td>
+            <td><%= t.suspicious %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
+

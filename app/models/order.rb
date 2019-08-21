@@ -8,4 +8,8 @@ class Order < ApplicationRecord
   def full_address
     [address, number, city, state, COUNTRY].join(', ')
   end
+
+  def to_s
+    self.id.to_s + " (" + state + ")"
+  end
 end

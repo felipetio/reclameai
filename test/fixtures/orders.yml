@@ -8,8 +8,8 @@ one:
   number: 2222
   city: São Paulo
   state: SP
-  lat:
-  lng:
+  lat: -23.619129
+  lng: -46.645659
 
 two:
   user: two
@@ -19,5 +19,5 @@ two:
   number: 25
   city: Brasília
   state: DF
-  lat:
-  long:
+  lat: -15.783508
+  lng: -47.878051

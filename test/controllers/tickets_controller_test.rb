@@ -2,23 +2,25 @@ require 'test_helper'
 
 class TicketsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get tickets_index_url
+    get tickets_url
     assert_response :success
   end
 
   test "should get new" do
-    get tickets_new_url
+    get new_ticket_url
     assert_response :success
   end
 
-  test "should get create" do
-    get tickets_create_url
-    assert_response :success
+  test "should post create and redirect to show" do
+    order = orders(:sp)
+    ticket_params = { order_id: order.id, description: "Lorem impsum" }
+    post tickets_url, params: {ticket: ticket_params }
+    assert_response :redirect
   end
 
   test "should get show" do
-    get tickets_show_url
+    ticket = tickets(:one)
+    get ticket_url ticket.id
     assert_response :success
   end
-
 end

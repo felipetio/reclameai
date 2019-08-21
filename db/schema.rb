@@ -12,8 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2019_08_20_184307) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "orders", force: :cascade do |t|
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.decimal "total"
     t.string "cep"
     t.string "address"
@@ -28,7 +31,7 @@ ActiveRecord::Schema.define(version: 2019_08_20_184307) do
   end
 
   create_table "tickets", force: :cascade do |t|
-    t.integer "order_id", null: false
+    t.bigint "order_id", null: false
     t.string "description"
     t.decimal "lat", precision: 10, scale: 6
     t.decimal "lng", precision: 10, scale: 6

@@ -31,6 +31,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'simple_form'
 
+gem "nokogiri", ">= 1.10.4"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'dotenv-rails'
